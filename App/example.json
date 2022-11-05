@@ -1,0 +1,31 @@
+{
+  "found": true,
+  "tweet_user": {
+    "name": "Christopher Judge",
+    "username": "iamchrisjudge",
+    "text": "5 days… https://t.co/gK2qMQuSMS"
+  },
+  "type": "video/gif",
+  "duration": 47.375,
+  "dimensionsAvailable": 3,
+  "download": [
+    {
+      "witdh": "320",
+      "height": "568",
+      "dimension": "320x568",
+      "url": "https://video.twimg.com/ext_tw_video/1588689724692045824/pu/vid/320x568/Z24iI3p09r-nWNPJ.mp4?tag=12"
+    },
+    {
+      "witdh": "480",
+      "height": "852",
+      "dimension": "480x852",
+      "url": "https://video.twimg.com/ext_tw_video/1588689724692045824/pu/vid/480x852/LZGYonjf_62PIlTY.mp4?tag=12"
+    },
+    {
+      "witdh": "720",
+      "height": "1280",
+      "dimension": "720x1280",
+      "url": "https://video.twimg.com/ext_tw_video/1588689724692045824/pu/vid/720x1280/M9ec4xCc0qd6I0pM.mp4?tag=12"
+    }
+  ]
+}
