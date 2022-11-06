@@ -14,6 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
           rel="stylesheet"
         />
+        <meta name="theme-color" content="#1d9bf0" />
       </Head>
       <body className="bg-[#121214]">
         <Main />
