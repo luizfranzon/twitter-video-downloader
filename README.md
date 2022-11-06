@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/luizfranzon/twitter-video-downloader">
-    <img src="./.github/assets/download-simple-bold%201.svg" alt="Logo" width="80" height="80">
+    <img src="./.github/assets/icon.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Twitter Video Downloder</h3>
