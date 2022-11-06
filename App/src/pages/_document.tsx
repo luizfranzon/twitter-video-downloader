@@ -15,6 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta name="theme-color" content="#1d9bf0" />
+        <link rel="shortcut icon" type="image/png" href="/favicon/iconpng.png" />
       </Head>
       <body className="bg-[#121214]">
         <Main />
