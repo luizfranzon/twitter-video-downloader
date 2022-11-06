@@ -9,7 +9,7 @@
 <h3 align="center">Twitter Video Downloder</h3>
 
   <p align="center">
-    A tool for downloading videos from twitter.
+    A tool to download videos from twitter.
 
 </div>
 <br />
