@@ -16,7 +16,6 @@ export default function Document() {
         />
         <meta name="theme-color" content="#1d9bf0" />
         <link rel="shortcut icon" type="image/png" href="/favicon/iconpng.png" />
-        <title>Twitter Video Downloader</title>
       </Head>
       <body className="bg-[#121214]">
         <Main />
