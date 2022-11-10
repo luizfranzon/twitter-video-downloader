@@ -1,14 +1,17 @@
 import { ArrowLineDown, CaretDoubleRight } from "phosphor-react";
 import { FormEvent, useState } from "react";
+import { Button } from "../components/Button";
 import { urlVideoDimensionFormater } from "../utils/urlVideoDimensionFormater";
 
 export default function Home() {
   const [videoLink, setVideoLink] = useState("");
   const [videoData, setVideoData] = useState([{ url: "" }]);
   const [hasData, setHasData] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
 
   const fetchVideoData = async (event: FormEvent) => {
     event.preventDefault();
+    setIsLoading(true)
 
     try {
       const response = await fetch(`/api/video?videoUrl=${videoLink}`);
@@ -16,11 +19,11 @@ export default function Home() {
       const downloadLinks = data.download;
       setVideoData(downloadLinks);
       setHasData(true);
+      setIsLoading(false)
     } catch {
       alert("Erro! Verifique o link e tente novamente.");
     }
   };
-
   return (
     <form
       onSubmit={fetchVideoData}
@@ -42,9 +45,8 @@ export default function Home() {
           className="text-gray-100 text-sm lg:text-xl px-6 py-4 rounded bg-[#202024] border border-[#323238] outline-none focus:outline-blueTwitter w-[90%] md:w-[500px] lg:w-[600px]"
           type="text"
         />
-        <button className="text-2xl flex items-center gap-1 bg-blueTwitter py-2 px-8 rounded mt-6 text-white font-bold hover:bg-[#0F85D4] transition-colors">
-          Baixar <CaretDoubleRight size={28} color="#ecf0f3" weight="bold" />
-        </button>
+        
+        <Button type="submit" isLoading={isLoading}/>
         <div className="mt-6 flex gap-2 flex-col md:flex-row">
           {hasData
             ? videoData.map((video) => {
