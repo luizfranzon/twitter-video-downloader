@@ -7,7 +7,7 @@ export default function Home() {
   const [videoLink, setVideoLink] = useState("");
   const [videoData, setVideoData] = useState([{ url: "" }]);
   const [hasData, setHasData] = useState(false);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchVideoData = async (event: FormEvent) => {
     event.preventDefault();

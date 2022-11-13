@@ -17,7 +17,7 @@ export default function Document() {
         <meta name="theme-color" content="#1d9bf0" />
         <link rel="shortcut icon" type="image/png" href="/favicon/iconpng.png" />
       </Head>
-      <body className="bg-[#121214]">
+      <body className="bg-[#121214] selection:bg-[#86cfff] selection:text-cyan-800">
         <Main />
         <NextScript />
       </body>
