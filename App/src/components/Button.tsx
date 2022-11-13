@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export function Button({ isLoading, type }: ButtonProps) {
   return (
-    <button type={type} className="text-2xl flex items-center gap-1 bg-blueTwitter py-2 px-8 rounded mt-6 text-white font-bold hover:bg-[#0F85D4] transition-colors">
+    <button type={type} className="text-2xl flex items-center gap-1 bg-blueTwitter py-2 px-8 rounded mt-6 text-white font-bold hover:bg-[#0F85D4] transition-colors outline-none focus:outline-blueTwitter">
       {isLoading ? (
         <>
           <Oval
