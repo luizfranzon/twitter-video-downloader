@@ -1,12 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import getTwitterMedia from "get-twitter-media";
-
-async function getVideoDownload(url: any) {
-  let response = await getTwitterMedia(url, {
-    buffer: true
-  });
-  return response;
-}
+const getTwitterMedia = require('get-twitter-media');
 
 export default async function handler(
   req: NextApiRequest,
@@ -14,7 +7,9 @@ export default async function handler(
 ) {
 
   const { videoLink } = req.body
-  var data = await getVideoDownload(videoLink);
+  var data = await getTwitterMedia(videoLink, {
+    buffer: true
+  });
 
   res.status(200).json(data);
 }
