@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import getTwitterMedia from "get-twitter-media";
+import getTwitterMedia from "../../../core";
 
 async function getVideoDownload(url: any) {
   let response = await getTwitterMedia(url, {
