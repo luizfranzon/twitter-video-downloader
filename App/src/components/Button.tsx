@@ -1,4 +1,4 @@
-import { CaretDoubleRight } from "phosphor-react";
+import { FileArrowDown } from "phosphor-react";
 import { Oval } from "react-loader-spinner";
 
 interface ButtonProps {
@@ -26,7 +26,7 @@ export function Button({ isLoading, type }: ButtonProps) {
         </>
       ) : (
         <>
-          Baixar <CaretDoubleRight size={28} color="#ecf0f3" weight="bold" />
+          Baixar <FileArrowDown size={28} color="#ffffff" weight="bold" />
         </>
       )}
     </button>
